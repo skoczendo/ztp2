@@ -15,7 +15,7 @@
                 <dt>{{ 'label.tag'|trans }}</dt>
                 <dd>
 				    {% for tag in bookmark.tags %}
-						{{ tag }}
+						{{ tag|comma }}
 					{% endfor %}
 				</dd>
                 <dt>{{ 'label.link'|trans }}</dt>
