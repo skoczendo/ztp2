@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    <h1>{{ 'title.tag'|trans }}</h1>
+
+    {% if tag is defined and tag|length %}
+    
+        <dl>
+            <dt>{{ 'label.id'|trans }}</dt>
+            <dd>{{ tag.id }}</dd>
+            <dt>{{ 'label.name'|trans }}</dt>
+            <dd>{{ tag.name }}</dd>
+        </dl>
+
+    {% else %}
+    <p>
+        {{ 'message.empty_list'|trans }}
+    </p>
+    {% endif %}
+
+{% endblock %}
+

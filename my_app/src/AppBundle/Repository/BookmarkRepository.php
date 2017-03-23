@@ -9,7 +9,7 @@ namespace AppBundle\Repository;
  *
  * @package AppBundle\Repository
  */
-class BookmarkRepository
+class BookmarkRepository implements BookmarkRepositoryInterface
 {
     /**
      * Bookmarks array

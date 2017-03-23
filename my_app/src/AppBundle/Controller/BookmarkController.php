@@ -8,6 +8,7 @@ namespace AppBundle\Controller;
 use AppBundle\Repository\BookmarkRepository;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 
 /**
  * Class BookmarkController.
@@ -20,6 +21,8 @@ class BookmarkController extends Controller
 {
     /**
      * Index action.
+     * 
+     * @param integer $page Current page number
      *
      * @return \Symfony\Component\HttpFoundation\Response Response
      *
@@ -27,11 +30,16 @@ class BookmarkController extends Controller
      *     "/",
      *     name="bookmark_index"
      * )
+     * @Route(
+     *     "/page/{page}",
+     *     requirements={"page": "[1-9]\d*"},
+     *     name="bookmark_index_paginated",
+     * )
+     * @Method("GET")
      */
     public function indexAction()
     {
-        $bookmarkRepository = new BookmarkRepository();
-        $bookmarks = $bookmarkRepository->findAll();
+        $bookmarks = $this->get('app.repository.bookmark')->findAll();
 
         return $this->render(
             'bookmark/index.html.twig',
@@ -51,9 +59,7 @@ class BookmarkController extends Controller
      */
     public function viewAction($id)
     {
-        $bookmarkRepository = new BookmarkRepository();
-        $bookmark = $bookmarkRepository->findOneById($id);
-        dump($bookmark);
+        $bookmark = $this->get('app.repository.bookmark')->findOneById($id);
         if (!$bookmark) {
 			throw $this->createNotFoundException(
 				'No bookmark found for id '.$id

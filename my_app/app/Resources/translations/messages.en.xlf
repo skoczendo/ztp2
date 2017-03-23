@@ -6,6 +6,10 @@
                 <source>label.id</source>
                 <target>Id</target>
             </trans-unit>
+            <trans-unit id="label.link">
+                <source>label.link</source>
+                <target>Link</target>
+            </trans-unit>
             <trans-unit id="label.see_the_bookmark">
                 <source>label.see_the_bookmark</source>
                 <target>See the bookmark</target>
