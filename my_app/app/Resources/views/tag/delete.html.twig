@@ -10,7 +10,7 @@
         {{ 'title.delete_tag'|trans }}
     </h1>
 
-    {{ form_start(form, { method: 'post', action: url('tag_edit') }) }}
+    {{ form_start(form, { method: 'post', action: url('tag_delete', {'id': tag.id}) }) }}
     {% if false == form.vars.valid %}
         <div class="alert alert-danger" role="alert">
             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -19,9 +19,11 @@
             {{ 'message.form_error'|trans }}
         </div>
     {% endif %}
-    {{ form_widget(form) }}
+    <div class="hidden">
+        {{ form_widget(form) }}
+    </div>
     <div>
-        <input type="submit" value="{{ 'action.save'|trans }}" class="btn btn-primary" />
+        <input type="submit" value="{{ 'action.delete'|trans }}" class="btn btn-primary" />
     </div>
     {{ form_end(form) }}
 
