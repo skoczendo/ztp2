@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+    {{ 'title.add_tag'|trans }}
+{% endblock %}
+
+{% block body %}
+
+    <h1>
+        {{ 'title.add_tag'|trans }}
+    </h1>
+
+    {{ include('_form.html.twig', { 'page_url': 'tag_edit' }) }}
+
+{% endblock %}
