@@ -13,7 +13,10 @@ services:
         tags:
             - { name: twig.extension }
     app.repository.bookmark:
-        class: AppBundle\Repository\BookmarkRepository
+        class: Doctrine\ORM\EntityRepository
+        factory: ['@doctrine.orm.default_entity_manager', getRepository]
+        arguments:
+             - AppBundle\Entity\Bookmark
     app.repository.tag:
         class: Doctrine\ORM\EntityRepository
         factory: ['@doctrine.orm.default_entity_manager', getRepository]

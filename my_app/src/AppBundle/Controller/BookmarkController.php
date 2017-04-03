@@ -5,10 +5,12 @@
 
 namespace AppBundle\Controller;
 
-use AppBundle\Repository\BookmarkRepository;
+use AppBundle\Entity\Bookmark;
+use AppBundle\Form\BookmarkType;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
+use Symfony\Component\HttpFoundation\Request;
 
 /**
  * Class BookmarkController.
@@ -53,7 +55,7 @@ class BookmarkController extends Controller
      * @return \Symfony\Component\HttpFoundation\Response Response
      *
      * @Route(
-     *     "/{id}",
+     *     "/view/{id}",
      *     name="bookmark_view"
      * )
      */
@@ -73,6 +75,41 @@ class BookmarkController extends Controller
 				]
 			);
 		}
+    }
+
+    /**
+     * Add action.
+     *
+     * @param \Symfony\Component\HttpFoundation\Request $request HTTP Request
+     *
+     * @return \Symfony\Component\HttpFoundation\RedirectResponse|\Symfony\Component\HttpFoundation\Response HTTP Response
+     *
+     * @Route(
+     *     "/add",
+     *     name="bookmark_add",
+     * )
+     * @Method({"GET", "POST"})
+     */
+    public function addAction(Request $request)
+    {
+        $bookmark = new Bookmark();
+        $form = $this->createForm(BookmarkType::class, $bookmark);
+        $form->handleRequest($request);
+
+        if ($form->isSubmitted() && $form->isValid()) {
+            $this->get('app.repository.bookmark')->save($bookmark);
+            $this->addFlash('success', 'message.created_successfully');
+
+            return $this->redirectToRoute('bookmark_index');
+        }
+
+        return $this->render(
+            'bookmark/add.html.twig',
+            [
+                'bookmark' => $bookmark,
+                'form' => $form->createView(),
+            ]
+        );
     }
 
 

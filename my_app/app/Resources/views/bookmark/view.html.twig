@@ -11,12 +11,14 @@
             <dd>{{ id }}</dd>
             <dt>{{ 'label.url'|trans }}</dt>
             <dd>{{ bookmark.url }}</dd>
+            {#
             <dt>{{ 'label.tag'|trans }}</dt>
             <dd>
                 {% for tag in bookmark.tags %}
                     {{ tag }}
                 {% endfor %}
             </dd>
+            #}
         </dl>
 
     {% else %}
