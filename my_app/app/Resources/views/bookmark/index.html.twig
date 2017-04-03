@@ -26,6 +26,16 @@
 						{{ 'label.see_the_bookmark'|trans }}
 					</a>
 				</dd>
+                <dd>
+                    <a href="{{ path('bookmark_edit', {'id': bookmark.id}) }}">
+                        {{ 'label.edit_the_bookmark'|trans }}
+                    </a>
+                </dd>
+                <dd>
+                    <a href="{{ path('bookmark_delete', {'id': bookmark.id}) }}">
+                        {{ 'label.delete_the_bookmark'|trans }}
+                    </a>
+                </dd>
             </dl>
         {% endfor %}
 

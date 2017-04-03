@@ -112,5 +112,73 @@ class BookmarkController extends Controller
         );
     }
 
+    /**
+     * Edit action.
+     *
+     * @param \Symfony\Component\HttpFoundation\Request $request HTTP Request
+     *
+     * @return \Symfony\Component\HttpFoundation\RedirectResponse|\Symfony\Component\HttpFoundation\Response HTTP Response
+     *
+     * @Route(
+     *     "/{id}/edit",
+     *     name="bookmark_edit",
+     *     requirements={"page": "[1-9]\d*"},
+     * )
+     * @Method({"GET", "POST"})
+     */
+    public function editAction(Request $request, Bookmark $bookmark){
+        $form = $this->createForm(BookmarkType::class, $bookmark);
+        $form->handleRequest($request);
+
+        if ($form->isSubmitted() && $form->isValid()) {
+            $this->get('app.repository.bookmark')->save($bookmark);
+            $this->addFlash('success', 'message.created_successfully');
+
+            return $this->redirectToRoute('bookmark_index');
+        }
+
+        return $this->render(
+            'bookmark/edit.html.twig',
+            [
+                'bookmark' => $bookmark,
+                'form' => $form->createView(),
+            ]
+        );
+    }
+
+    /**
+     * Delete action.
+     *
+     * @param \Symfony\Component\HttpFoundation\Request $request HTTP Request
+     *
+     * @return \Symfony\Component\HttpFoundation\RedirectResponse|\Symfony\Component\HttpFoundation\Response HTTP Response
+     *
+     * @Route(
+     *     "/{id}/delete",
+     *     name="bookmark_delete",
+     *     requirements={"page": "[1-9]\d*"},
+     * )
+     * @Method({"GET", "POST"})
+     */
+    public function deleteAction(Request $request,Bookmark $bookmark){
+        $form = $this->createForm(BookmarkType::class, $bookmark);
+        $form->handleRequest($request);
+
+        if ($form->isSubmitted() && $form->isValid()) {
+            $this->get('app.repository.bookmark')->delete($bookmark);
+            $this->addFlash('success', 'message.deleted_successfully');
+
+            return $this->redirectToRoute('bookmark_index');
+        }
+
+        return $this->render(
+            'bookmark/delete.html.twig',
+            [
+                'bookmark' => $bookmark,
+                'form' => $form->createView(),
+            ]
+        );
+    }
+
 
 }

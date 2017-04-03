@@ -2,213 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6483f9af-7341-4e88-a58d-cf322c884c78" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/my_app/src/AppBundle/DataFixtures/ORM/LoadBookmarkData.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/my_app/src/AppBundle/Repository/BookmarkRepository.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/my_app_3_2/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/my_app_3_2/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/my_app_3_2/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/my_app_3_2/app/.htaccess" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/my_app_3_2/app/AppCache.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/my_app_3_2/app/AppKernel.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/my_app_3_2/app/Resources/views/base.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/my_app_3_2/app/Resources/views/default/index.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/my_app_3_2/app/autoload.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/my_app_3_2/app/config/config.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/my_app_3_2/app/config/config_dev.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/my_app_3_2/app/config/config_prod.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/my_app_3_2/app/config/config_test.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/my_app_3_2/app/config/parameters.yml.dist" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/my_app_3_2/app/config/routing.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/my_app_3_2/app/config/routing_dev.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/my_app_3_2/app/config/security.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/my_app_3_2/app/config/services.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/my_app_3_2/bin/console" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/my_app_3_2/bin/symfony_requirements" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/my_app_3_2/composer.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/my_app_3_2/composer.lock" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/my_app_3_2/phpunit.xml.dist" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/my_app_3_2/src/.htaccess" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/my_app_3_2/src/AppBundle/AppBundle.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/my_app_3_2/src/AppBundle/Controller/DefaultController.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/my_app_3_2/tests/AppBundle/Controller/DefaultControllerTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/my_app_3_2/var/SymfonyRequirements.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/my_app_3_2/var/cache/.gitkeep" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/my_app_3_2/var/logs/.gitkeep" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/my_app_3_2/var/sessions/.gitkeep" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/my_app_3_2/web/.htaccess" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/my_app_3_2/web/app.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/my_app_3_2/web/app_dev.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/my_app_3_2/web/apple-touch-icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/my_app_3_2/web/config.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/my_app_3_2/web/favicon.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/my_app_3_2/web/robots.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/.editorconfig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/.php_cs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/.travis.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/CONTRIBUTING.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/app.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/app/.htaccess" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/app/AppCache.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/app/AppKernel.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/app/Resources/TwigBundle/views/Exception/error.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/app/Resources/TwigBundle/views/Exception/error403.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/app/Resources/TwigBundle/views/Exception/error404.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/app/Resources/TwigBundle/views/Exception/error500.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/app/Resources/translations/messages.ca.xlf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/app/Resources/translations/messages.cs.xlf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/app/Resources/translations/messages.de.xlf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/app/Resources/translations/messages.en.xlf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/app/Resources/translations/messages.es.xlf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/app/Resources/translations/messages.fr.xlf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/app/Resources/translations/messages.id.xlf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/app/Resources/translations/messages.it.xlf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/app/Resources/translations/messages.ja.xlf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/app/Resources/translations/messages.nl.xlf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/app/Resources/translations/messages.pl.xlf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/app/Resources/translations/messages.pt_BR.xlf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/app/Resources/translations/messages.ro.xlf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/app/Resources/translations/messages.ru.xlf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/app/Resources/translations/messages.sl.xlf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/app/Resources/translations/messages.uk.xlf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/app/Resources/translations/validators.ca.xlf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/app/Resources/translations/validators.cs.xlf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/app/Resources/translations/validators.de.xlf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/app/Resources/translations/validators.en.xlf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/app/Resources/translations/validators.es.xlf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/app/Resources/translations/validators.fr.xlf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/app/Resources/translations/validators.id.xlf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/app/Resources/translations/validators.it.xlf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/app/Resources/translations/validators.ja.xlf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/app/Resources/translations/validators.nl.xlf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/app/Resources/translations/validators.pl.xlf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/app/Resources/translations/validators.pt_BR.xlf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/app/Resources/translations/validators.ro.xlf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/app/Resources/translations/validators.ru.xlf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/app/Resources/translations/validators.sl.xlf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/app/Resources/translations/validators.uk.xlf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/app/Resources/views/admin/blog/_delete_form.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/app/Resources/views/admin/blog/_form.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/app/Resources/views/admin/blog/edit.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/app/Resources/views/admin/blog/index.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/app/Resources/views/admin/blog/new.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/app/Resources/views/admin/blog/show.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/app/Resources/views/admin/layout.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/app/Resources/views/base.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/app/Resources/views/blog/_comment_form.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/app/Resources/views/blog/_delete_post_confirmation.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/app/Resources/views/blog/_post_tags.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/app/Resources/views/blog/_rss.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/app/Resources/views/blog/about.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/app/Resources/views/blog/comment_form_error.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/app/Resources/views/blog/index.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/app/Resources/views/blog/index.xml.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/app/Resources/views/blog/post_show.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/app/Resources/views/default/_flash_messages.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/app/Resources/views/default/homepage.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/app/Resources/views/form/fields.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/app/Resources/views/form/layout.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/app/Resources/views/security/login.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/app/autoload.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/app/config/config.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/app/config/config_dev.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/app/config/config_prod.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/app/config/config_test.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/app/config/parameters.yml.dist" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/app/config/routing.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/app/config/routing_dev.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/app/config/security.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/app/config/services.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/appveyor.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/bin/console" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/bin/symfony_requirements" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/composer.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/composer.lock" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/phpunit.xml.dist" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/src/.htaccess" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/src/AppBundle/AppBundle.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/src/AppBundle/Command/AddUserCommand.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/src/AppBundle/Command/DeleteUserCommand.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/src/AppBundle/Command/ListUsersCommand.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/src/AppBundle/Controller/Admin/BlogController.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/src/AppBundle/Controller/BlogController.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/src/AppBundle/Controller/SecurityController.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/src/AppBundle/DataFixtures/ORM/PostFixtures.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/src/AppBundle/DataFixtures/ORM/TagFixtures.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/src/AppBundle/DataFixtures/ORM/UserFixtures.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/src/AppBundle/Entity/Comment.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/src/AppBundle/Entity/Post.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/src/AppBundle/Entity/Tag.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/src/AppBundle/Entity/User.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/src/AppBundle/EventListener/CheckRequirementsSubscriber.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/src/AppBundle/EventListener/CommentNotificationListener.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/src/AppBundle/EventListener/RedirectToPreferredLocaleListener.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/src/AppBundle/Events.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/src/AppBundle/Form/CommentType.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/src/AppBundle/Form/DataTransformer/TagArrayToStringTransformer.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/src/AppBundle/Form/PostType.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/src/AppBundle/Form/Type/DateTimePickerType.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/src/AppBundle/Form/Type/TagsInputType.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/src/AppBundle/Repository/PostRepository.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/src/AppBundle/Repository/UserRepository.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/src/AppBundle/Security/PostVoter.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/src/AppBundle/Twig/AppExtension.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/src/AppBundle/Utils/Markdown.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/src/AppBundle/Utils/MomentFormatConverter.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/src/AppBundle/Utils/Slugger.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/src/CodeExplorerBundle/CodeExplorerBundle.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/src/CodeExplorerBundle/DependencyInjection/CodeExplorerExtension.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/src/CodeExplorerBundle/EventListener/ControllerListener.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/src/CodeExplorerBundle/Resources/config/services.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/src/CodeExplorerBundle/Resources/views/source_code.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/src/CodeExplorerBundle/Twig/SourceCodeExtension.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/tests/AppBundle/Controller/Admin/BlogControllerTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/tests/AppBundle/Controller/BlogControllerTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/tests/AppBundle/Controller/DefaultControllerTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/tests/AppBundle/Utils/SluggerTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/var/SymfonyRequirements.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/var/cache/.gitkeep" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/var/data/blog.sqlite" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/var/data/blog_test.sqlite" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/var/logs/.gitkeep" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/var/sessions/.gitkeep" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/web/.htaccess" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/web/app.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/web/app_dev.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/web/apple-touch-icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/web/config.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/web/css/bootstrap-datetimepicker.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/web/css/bootstrap-flatly-3.3.7.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/web/css/bootstrap-tagsinput.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/web/css/font-awesome-4.6.3.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/web/css/font-lato.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/web/css/highlight-solarized-light.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/web/css/main.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/web/favicon.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/web/fonts/font-awesome/FontAwesome.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/web/fonts/font-awesome/fontawesome-webfont.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/web/fonts/font-awesome/fontawesome-webfont.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/web/fonts/font-awesome/fontawesome-webfont.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/web/fonts/font-awesome/fontawesome-webfont.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/web/fonts/font-awesome/fontawesome-webfont.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/web/fonts/lato/Lato-Bold.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/web/fonts/lato/Lato-BoldItalic.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/web/fonts/lato/Lato-Italic.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/web/fonts/lato/Lato-Regular.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/web/js/bootstrap-3.3.7.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/web/js/bootstrap-datetimepicker.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/web/js/bootstrap-tagsinput.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/web/js/highlight.pack.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/web/js/jquery-2.2.4.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/web/js/main.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/web/js/moment.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/symfony_demo/web/robots.txt" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my_app/app/Resources/views/_form.html.twig" afterPath="$PROJECT_DIR$/my_app/app/Resources/views/_form.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my_app/app/Resources/views/bookmark/index.html.twig" afterPath="$PROJECT_DIR$/my_app/app/Resources/views/bookmark/index.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my_app/app/Resources/views/bookmark/view.html.twig" afterPath="$PROJECT_DIR$/my_app/app/Resources/views/bookmark/view.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my_app/app/config/services.yml" afterPath="$PROJECT_DIR$/my_app/app/config/services.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my_app/src/AppBundle/Controller/BookmarkController.php" afterPath="$PROJECT_DIR$/my_app/src/AppBundle/Controller/BookmarkController.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -221,49 +15,24 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Bookmark.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/my_app/src/AppBundle/Entity/Bookmark.php">
+      <file leaf-file-name="TagController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/my_app/src/AppBundle/Controller/TagController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="57" column="22" lean-forward="false" selection-start-line="57" selection-start-column="22" selection-end-line="57" selection-end-column="22" />
+            <state relative-caret-position="882">
+              <caret line="190" column="5" lean-forward="true" selection-start-line="158" selection-start-column="4" selection-end-line="190" selection-end-column="5" />
               <folding>
-                <element signature="e#6#33#0#PHP" expanded="true" />
-                <element signature="e#63#95#0#PHP" expanded="true" />
+                <element signature="e#6#32#0#PHP" expanded="true" />
+                <element signature="e#67#92#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BookmarkRepository.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/my_app/src/AppBundle/Repository/BookmarkRepository.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
-              <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-              <folding>
-                <element signature="e#40#70#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BookmarkType.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/my_app/src/AppBundle/Form/BookmarkType.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="825">
-              <caret line="55" column="24" lean-forward="false" selection-start-line="55" selection-start-column="24" selection-end-line="55" selection-end-column="24" />
-              <folding>
-                <element signature="e#6#31#0#PHP" expanded="true" />
-                <element signature="e#59#89#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BookmarkController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="BookmarkController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/my_app/src/AppBundle/Controller/BookmarkController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="269">
-              <caret line="57" column="18" lean-forward="false" selection-start-line="57" selection-start-column="18" selection-end-line="57" selection-end-column="18" />
+            <state relative-caret-position="674">
+              <caret line="167" column="60" lean-forward="true" selection-start-line="167" selection-start-column="60" selection-end-line="167" selection-end-column="60" />
               <folding>
                 <element signature="e#72#102#0#PHP" expanded="true" />
               </folding>
@@ -271,21 +40,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/my_app/app/Resources/views/bookmark/index.html.twig">
+      <file leaf-file-name="delete.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/my_app/app/Resources/views/bookmark/delete.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="38" column="38" lean-forward="false" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="38" />
+            <state relative-caret-position="330">
+              <caret line="22" column="31" lean-forward="true" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="add.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/my_app/app/Resources/views/bookmark/add.html.twig">
+      <file leaf-file-name="edit.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/my_app/app/Resources/views/bookmark/edit.html.twig">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
-              <caret line="12" column="67" lean-forward="false" selection-start-line="12" selection-start-column="67" selection-end-line="12" selection-end-column="67" />
+              <caret line="12" column="86" lean-forward="false" selection-start-line="12" selection-start-column="86" selection-end-line="12" selection-end-column="86" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/my_app/app/Resources/views/bookmark/index.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="525">
+              <caret line="35" column="40" lean-forward="false" selection-start-line="35" selection-start-column="40" selection-end-line="35" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -323,11 +102,13 @@
         <option value="$PROJECT_DIR$/my_app/src/AppBundle/Form/BookmarkType.php" />
         <option value="$PROJECT_DIR$/my_app/src/AppBundle/Repository/BookmarkRepository.php" />
         <option value="$PROJECT_DIR$/my_app/src/AppBundle/Entity/Bookmark.php" />
-        <option value="$PROJECT_DIR$/my_app/app/Resources/views/bookmark/index.html.twig" />
         <option value="$PROJECT_DIR$/my_app/app/Resources/views/tag/add.html.twig" />
         <option value="$PROJECT_DIR$/my_app/app/Resources/views/bookmark/add.html.twig" />
         <option value="$PROJECT_DIR$/my_app/app/Resources/views/_form.html.twig" />
+        <option value="$PROJECT_DIR$/my_app/app/Resources/views/bookmark/edit.html.twig" />
         <option value="$PROJECT_DIR$/my_app/src/AppBundle/Controller/BookmarkController.php" />
+        <option value="$PROJECT_DIR$/my_app/app/Resources/views/bookmark/delete.html.twig" />
+        <option value="$PROJECT_DIR$/my_app/app/Resources/views/bookmark/index.html.twig" />
       </list>
     </option>
   </component>
@@ -818,12 +599,12 @@
       <updated>1491068349141</updated>
       <workItem from="1491068353953" duration="11061000" />
       <workItem from="1491127760555" duration="5004000" />
-      <workItem from="1491214124313" duration="1963000" />
+      <workItem from="1491214124313" duration="2888000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18028000" />
+    <option name="totallyTimeSpent" value="18953000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1855" height="1204" extended-state="6" />
@@ -934,6 +715,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="14" selection-end-column="24" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -967,6 +749,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
           <caret line="25" column="53" lean-forward="false" selection-start-line="25" selection-start-column="53" selection-end-line="25" selection-end-column="53" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1005,20 +788,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/my_app/app/Resources/views/_form_without_parameters.html.twig" />
     <entry file="file://$PROJECT_DIR$/my_app/app/Resources/views/_form_with_one_parameter.html.twig" />
-    <entry file="file://$PROJECT_DIR$/my_app/app/Resources/views/tag/edit.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="14" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my_app/app/Resources/views/tag/delete.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="53" lean-forward="false" selection-start-line="25" selection-start-column="53" selection-end-line="25" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/my_app/src/AppBundle/Entity/Tag.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-390">
@@ -1124,25 +893,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/my_app/app/Resources/views/bookmark/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="38" column="38" lean-forward="false" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my_app/src/AppBundle/Controller/TagController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="786">
-          <caret line="89" column="0" lean-forward="false" selection-start-line="89" selection-start-column="0" selection-end-line="122" selection-end-column="5" />
-          <folding>
-            <element signature="e#6#32#0#PHP" expanded="true" />
-            <element signature="e#67#92#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/my_app/src/AppBundle/Entity/Bookmark.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
@@ -1154,13 +904,64 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/my_app/app/Resources/views/tag/edit.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="14" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="17" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my_app/app/Resources/views/bookmark/edit.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="86" lean-forward="false" selection-start-line="12" selection-start-column="86" selection-end-line="12" selection-end-column="86" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my_app/src/AppBundle/Controller/TagController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="882">
+          <caret line="190" column="5" lean-forward="true" selection-start-line="158" selection-start-column="4" selection-end-line="190" selection-end-column="5" />
+          <folding>
+            <element signature="e#6#32#0#PHP" expanded="true" />
+            <element signature="e#67#92#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/my_app/src/AppBundle/Controller/BookmarkController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="57" column="18" lean-forward="false" selection-start-line="57" selection-start-column="18" selection-end-line="57" selection-end-column="18" />
+        <state relative-caret-position="674">
+          <caret line="167" column="60" lean-forward="true" selection-start-line="167" selection-start-column="60" selection-end-line="167" selection-end-column="60" />
           <folding>
             <element signature="e#72#102#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my_app/app/Resources/views/tag/delete.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="14" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="29" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my_app/app/Resources/views/bookmark/delete.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="31" lean-forward="true" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my_app/app/Resources/views/bookmark/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="35" column="40" lean-forward="false" selection-start-line="35" selection-start-column="40" selection-end-line="35" selection-end-column="40" />
+          <folding />
         </state>
       </provider>
     </entry>
