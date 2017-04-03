@@ -4,6 +4,8 @@ namespace AppBundle\Repository;
 
 use AppBundle\Entity\Bookmark;
 use Doctrine\ORM\EntityRepository;
+use Pagerfanta\Adapter\DoctrineORMAdapter;
+use Pagerfanta\Pagerfanta;
 
 /**
  * BookmarkRepository
@@ -13,6 +15,35 @@ use Doctrine\ORM\EntityRepository;
  */
 class BookmarkRepository extends EntityRepository
 {
+    /**
+     * Gets all records paginated.
+     *
+     * @param int $page Page number
+     *
+     * @return \Pagerfanta\Pagerfanta Result
+     */
+    public function findAllPaginated($page = 1)
+    {
+        $paginator = new Pagerfanta(new DoctrineORMAdapter($this->queryAll(), false));
+        $paginator->setMaxPerPage(Bookmark::NUM_ITEMS);
+        $paginator->setCurrentPage($page);
+
+        return $paginator;
+    }
+
+    /**
+     * Query all Attributes.
+     *
+     * @return \Doctrine\ORM\Query
+     */
+    protected function queryAll()
+    {
+        return $this->_em->createQuery('
+            SELECT bookmark
+            FROM AppBundle:Bookmark bookmark
+        ');
+    }
+
     /**
      * Save entity.
      *

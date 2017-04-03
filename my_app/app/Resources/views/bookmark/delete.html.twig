@@ -19,12 +19,12 @@
             {{ 'message.form_error'|trans }}
         </div>
     {% endif %}
-    <div class="hidden">
-        {{ form_widget(form) }}
-    </div>
+    {{ form_widget(form) }}
     <div>
         <input type="submit" value="{{ 'action.delete'|trans }}" class="btn btn-primary" />
     </div>
     {{ form_end(form) }}
+
+    {% include '_form.html.twig' with {action_url: 'bookmark_add', id: bookmark.id} %}
 
 {% endblock %}
