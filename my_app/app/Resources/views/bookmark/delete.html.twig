@@ -10,21 +10,11 @@
         {{ 'title.delete_bookmark'|trans }}
     </h1>
 
-    {{ form_start(form, { method: 'post', action: url('bookmark_delete', {'id': bookmark.id}) }) }}
-    {% if false == form.vars.valid %}
-        <div class="alert alert-danger" role="alert">
-            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-            </button>
-            {{ 'message.form_error'|trans }}
-        </div>
-    {% endif %}
-    {{ form_widget(form) }}
-    <div>
-        <input type="submit" value="{{ 'action.delete'|trans }}" class="btn btn-primary" />
+    {% include '_form_with_id.html.twig' with {action_url: 'bookmark_delete', variable_id: bookmark.id} %}
+
+    <div class="btn-group">
+        <a href="{{ path('bookmark_index') }}" class="btn btn-default" title="{{ 'action.index'|trans }}">
+            {{ 'action.index'|trans }}
+        </a>
     </div>
-    {{ form_end(form) }}
-
-    {% include '_form.html.twig' with {action_url: 'bookmark_add', id: bookmark.id} %}
-
 {% endblock %}

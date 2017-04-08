@@ -26,5 +26,10 @@
         {{ 'message.empty_list'|trans }}
     </p>
     {% endif %}
+    <div class="btn-group">
+        <a href="{{ path('bookmark_index') }}" class="btn btn-default" title="{{ 'action.index'|trans }}">
+            {{ 'action.index'|trans }}
+        </a>
+    </div>
 
 {% endblock %}

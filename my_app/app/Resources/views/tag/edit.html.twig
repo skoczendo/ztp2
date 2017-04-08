@@ -10,9 +10,13 @@
         {{ 'title.edit_tag'|trans }}
     </h1>
 
-    {{ form_start(form, { method: 'post', action: url('tag_edit', {'id': tag.id}) }) }}
-        {{ include('_form.html.twig') }}
-    {{ form_end(form) }}
+    {% include '_form_with_id.html.twig' with {action_url: 'tag_edit', variable_id: tag.id} %}
+
+    <div class="btn-group">
+        <a href="{{ path('tag_index') }}" class="btn btn-default" title="{{ 'action.index'|trans }}">
+            {{ 'action.index'|trans }}
+        </a>
+    </div>
 
 
 {% endblock %}

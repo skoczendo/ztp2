@@ -10,9 +10,12 @@
         {{ 'title.edit_bookmark'|trans }}
     </h1>
 
-    {{ form_start(form, { method: 'post', action: url('bookmark_edit', {'id': bookmark.id}) }) }}
-    {{ include('_form.html.twig') }}
-    {{ form_end(form) }}
+    {% include '_form_with_id.html.twig' with {action_url: 'bookmark_edit', variable_id: bookmark.id} %}
 
+    <div class="btn-group">
+        <a href="{{ path('bookmark_index') }}" class="btn btn-default" title="{{ 'action.index'|trans }}">
+            {{ 'action.index'|trans }}
+        </a>
+    </div>
 
 {% endblock %}

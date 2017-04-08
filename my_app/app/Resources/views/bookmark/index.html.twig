@@ -4,6 +4,8 @@
 
     <h1>{{ 'title.bookmarks'|trans }}</h1>
 
+    {{ include('_flash_message.html.twig') }}
+    
     {% if bookmarks is defined and bookmarks|length %}
 
         {% for bookmark in bookmarks %}

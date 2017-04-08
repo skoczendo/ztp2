@@ -10,8 +10,12 @@
         {{ 'title.add_tag'|trans }}
     </h1>
 
-    {{ form_start(form, { method: 'post', action: url('tag_add') }) }}
-        {{ include('_form.html.twig') }}
-    {{ form_end(form) }}
+    {% include '_form.html.twig' with {action_url: 'tag_add'} %}
+
+    <div class="btn-group">
+        <a href="{{ path('tag_index') }}" class="btn btn-default" title="{{ 'action.index'|trans }}">
+            {{ 'action.index'|trans }}
+        </a>
+    </div>
 
 {% endblock %}

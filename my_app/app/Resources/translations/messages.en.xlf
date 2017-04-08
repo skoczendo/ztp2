@@ -17,6 +17,16 @@
                 <target>Edit</target>
             </trans-unit>
 
+            <trans-unit id="action.index ">
+                <source>action.index</source>
+                <target>Index</target>
+            </trans-unit>
+
+            <trans-unit id="action.save ">
+                <source>action.save</source>
+                <target>Save</target>
+            </trans-unit>
+
             <trans-unit id="action.view ">
                 <source>action.view</source>
                 <target>View</target>

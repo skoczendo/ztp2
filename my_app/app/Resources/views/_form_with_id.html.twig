@@ -1,0 +1,17 @@
+{{ form_start(form, { method: 'post', action: url(action_url, {'id': variable_id}) }) }}
+    {% if false == form.vars.valid %}
+        <div class="alert alert-danger" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            {{ 'message.form_error'|trans }}
+        </div>
+
+    {% endif %}
+    {{ form_widget(form) }}
+
+<div>
+    <input type="submit" value="{{ 'action.save'|trans }}" class="btn btn-primary" />
+</div>
+
+{{ form_end(form) }}

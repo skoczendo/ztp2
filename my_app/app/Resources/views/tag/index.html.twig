@@ -6,7 +6,7 @@
 
 {% block body %}
 
-    {{ include('_single_success_message.html.twig') }}
+    {{ include('_flash_message.html.twig') }}
 
     <h1>{{ 'title.tags'|trans }}</h1>
     {% if tags is defined and tags|length %}
