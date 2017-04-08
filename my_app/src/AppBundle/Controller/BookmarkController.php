@@ -10,6 +10,7 @@ use AppBundle\Form\BookmarkType;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
+use Symfony\Component\Form\Extension\Core\Type\FormType;
 use Symfony\Component\HttpFoundation\Request;
 
 /**
@@ -23,14 +24,15 @@ class BookmarkController extends Controller
 {
     /**
      * Index action.
-     * 
+     *
      * @param integer $page Current page number
      *
-     * @return \Symfony\Component\HttpFoundation\Response Response
+     * @return \Symfony\Component\HttpFoundation\Response HTTP Response
      *
      * @Route(
      *     "/",
-     *     name="bookmark_index"
+     *     defaults={"page": 1},
+     *     name="bookmark_index",
      * )
      * @Route(
      *     "/page/{page}",
@@ -39,9 +41,9 @@ class BookmarkController extends Controller
      * )
      * @Method("GET")
      */
-    public function indexAction()
+    public function indexAction($page)
     {
-        $bookmarks = $this->get('app.repository.bookmark')->findAll();
+        $bookmarks = $this->get('app.repository.bookmark')->findAllPaginated($page);
 
         return $this->render(
             'bookmark/index.html.twig',
@@ -161,7 +163,7 @@ class BookmarkController extends Controller
      * @Method({"GET", "POST"})
      */
     public function deleteAction(Request $request,Bookmark $bookmark){
-        $form = $this->createForm(BookmarkType::class, $bookmark);
+        $form = $this->createForm(FormType::class, $bookmark);
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {

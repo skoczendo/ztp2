@@ -10,8 +10,6 @@
         {{ 'title.add_bookmark'|trans }}
     </h1>
 
-    {{ form_start(form, { method: 'post', action: url('bookmark_add') }) }}
-    {{ include('_form.html.twig') }}
-    {{ form_end(form) }}
+    {% include '_form.html.twig' with {action_url: 'bookmark_add'} %}
 
 {% endblock %}
