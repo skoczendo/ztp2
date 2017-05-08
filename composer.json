@@ -1,2 +1,6 @@
 {
+    "config": {
+        "bin-dir": "/home/evika/ztp2/my_app/vendor/bin",
+        "vendor-dir": "/home/evika/ztp2/my_app/vendor/"
+    }
 }

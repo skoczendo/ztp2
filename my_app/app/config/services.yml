@@ -22,3 +22,11 @@ services:
         factory: ['@doctrine.orm.default_entity_manager', getRepository]
         arguments:
             - AppBundle\Entity\Tag
+    app.form.bookmarks:
+        class: AppBundle\Form\BookmarkType
+        arguments: ['@app.repository.tag']
+        tags:
+            - { name: form.type }
+    user_manager:
+            class:  FOS\UserBundle\Document\UserManager
+            arguments: [@fos_user.user_manager]

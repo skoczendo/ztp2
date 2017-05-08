@@ -31,7 +31,7 @@ class Bookmark
      * of specifying them in app/config/config.yml.
      * See http://symfony.com/doc/current/best_practices/configuration.html#constants-vs-configuration-options
      */
-    const NUM_ITEMS = 10;
+    const NUM_ITEMS = 2;
 
     /**
      * Primary key.
@@ -71,6 +71,21 @@ class Bookmark
      * )
      */
     protected $url;
+
+    /**
+     * Tags.
+     *
+     * @var \Doctrine\Common\Collections\ArrayCollection $tags
+     *
+     * @ORM\ManyToMany(
+     *     targetEntity="Tag",
+     *     inversedBy="bookmarks",
+     * )
+     * @ORM\JoinTable(
+     *     name="bookmarks_tags"
+     * )
+     */
+    protected $tags;
 
     /**
      * Get id
