@@ -4,11 +4,14 @@
  */
 namespace AppBundle\Form;
 use AppBundle\Entity\Bookmark;
+use AppBundle\Form\EventListener\FieldsDefaultValueEventSubscriber;
 use AppBundle\Repository\TagRepository;
 use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\FormBuilderInterface;
+use Symfony\Component\Form\FormEvent;
+use Symfony\Component\Form\FormEvents;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 use AppBundle\Entity\Tag;
 /**
@@ -36,6 +39,7 @@ class BookmarkType extends AbstractType
                 'required' => true,
                 'attr' => [
                     'max_length' => 255,
+                    'readonly' => (isset($options['data']) && $options['data']->getId()),
                 ],
             ]
         );
@@ -58,6 +62,31 @@ class BookmarkType extends AbstractType
         $builder->get('tags')->addModelTransformer(
             new TagTransformer($this->tagRepository)
         );
+/*
+        $builder->addEventListener(
+            FormEvents::PRE_SUBMIT,
+            function (FormEvent $event) {
+                $form = $event->getForm();
+                $data = $event->getData();
+
+                $formData = $form->getData();
+
+                if($formData->getId()){
+                    $data['url'] = $formData->getUrl();
+                    $event->setData($data);
+                }
+
+
+                dump($form);
+                dump($data);
+                dump($formData);
+            }
+        );
+*/
+        $builder->addEventSubscriber(
+            new FieldsDefaultValueEventSubscriber()
+        );
+
     }
     /**
      * {@inheritdoc}
