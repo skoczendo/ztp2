@@ -12,6 +12,8 @@
         message: error|trans({}, 'FOSUserBundle')
         } %}
     {% endif %}
+
+
     <form action="{{ path("fos_user_security_check") }}" method="post">
         <input type="hidden" name="_csrf_token" value="{{ csrf_token }}" />
 
@@ -26,4 +28,13 @@
 
         <input type="submit" id="_submit" name="_submit" value="{{ 'security.login.submit'|trans({}, 'FOSUserBundle') }}" />
     </form>
+
+
 {% endblock body %}
+
+<form action="{{ path('fos_user_security_check') }}" {{ form_enctype(form) }} method="POST" class="fos_user_login">
+    {{ form_widget(form) }}
+    <div>
+        <input type="submit" value="{{ 'security.login.submit'|trans({}, 'FOSUserBundle') }}" />
+    </div>
+</form>

@@ -50,6 +50,31 @@ class BookmarkController extends Controller
             ['bookmarks' => $bookmarks]
         );
     }
+
+    /**
+     * Search action.
+     *
+     * @param integer $page Current page number
+     *
+     * @return \Symfony\Component\HttpFoundation\Response HTTP Response
+     *
+     * @Route(
+     *     "/search",
+     *     name="bookmark_search",
+     * )
+     * @Method("GET")
+     */
+    public function searchAction()
+    {
+        $bookmarks = $this->get('app.repository.bookmark')->search(1);
+
+        dump($bookmarks);
+
+        return $this->render(
+            'bookmark/index.html.twig',
+            ['bookmarks' => $bookmarks]
+        );
+    }
     
     /**
      * View action.

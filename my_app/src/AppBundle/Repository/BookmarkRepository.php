@@ -38,10 +38,31 @@ class BookmarkRepository extends EntityRepository
      */
     protected function queryAll()
     {
-        return $this->_em->createQuery('
-            SELECT bookmark
-            FROM AppBundle:Bookmark bookmark
-        ');
+        $qb = $this->createQueryBuilder('b');
+        $qb->select('b')
+            ->orderBy('b.id', 'DESC');
+
+        dump($qb->getQuery()->getResult());
+
+        return $qb;
+    }
+
+    /**
+     * Test of search.
+     *
+     * @return \Doctrine\ORM\Query
+     */
+    public function search($page)
+    {
+        $qb = $this->queryAll()->where('b.id > :id')
+            ->setParameter(':id', 12);
+
+        $paginator = new Pagerfanta(new DoctrineORMAdapter($qb, false));
+        $paginator->setMaxPerPage(Bookmark::NUM_ITEMS);
+        $paginator->setCurrentPage($page);
+
+        return $paginator;
+
     }
 
     /**
